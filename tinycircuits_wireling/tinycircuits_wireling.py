@@ -31,7 +31,7 @@ i2c = busio.I2C(board.SCL, board.SDA)
 
 _MULTIPLEXER_ADDRESS = const(0x70)
 
-class Wirelings(): 
+class Wireling(): 
     def __init__(self):
         GPIO.setmode(GPIO.BCM)
         GPIO.setup(22, GPIO.OUT) # provides power to Wireling Pi Hat
@@ -63,6 +63,7 @@ class Wirelings():
         chan3 = AnalogIn(ads, ADS.P3)
 
         # Print channel value, and voltage
+        print("{:>5}\t{:>5}".format('raw', 'v'))
         print("port0: ")
         print("{:>5}\t{:>5.3f}".format(chan.value, chan.voltage))
         print("")
