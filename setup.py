@@ -9,7 +9,7 @@ setuptools.setup(
     author="TinyCircuits",
     author_email="info@tinycircuits.com",
     description="Wireling Python library",
-    long_description=long_description,,
+    long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/TinyCircuits/TinyCircuits-Wireling-Python-Lib",
     packages=setuptools.find_packages(),
