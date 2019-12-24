@@ -5,3 +5,9 @@ This Python package includes some Wireling helper functions to make using them e
 To install this library, use:
 
 `pip install tinycircuits_wireling`
+
+or
+
+`pip3 install tinycircuits_wireling`
+
+if Python 3 is not your default version of Python.
