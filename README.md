@@ -4,4 +4,4 @@ This Python package includes some Wireling helper functions to make using them e
 
 To install this library, use:
 
-'''pip install tinycircuits_wireling'''
+'pip install tinycircuits_wireling'
