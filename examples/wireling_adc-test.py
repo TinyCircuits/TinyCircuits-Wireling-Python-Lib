@@ -1,5 +1,5 @@
 # Wireling program demonstrating the functionality of the readADC() function
-# Prints out voltage 
+# Prints out voltage and raw analog value
 
 import time
 import tinycircuits_wireling

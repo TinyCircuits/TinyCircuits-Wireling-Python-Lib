@@ -8,11 +8,11 @@ import tinycircuits_wireling
 pi = pigpio.pi()
 
 # Initialize and enable power to Wireling Pi Hat
-tinycircuits_wireling.Wireling()
+wireling = tinycircuits_wireling.Wireling()
 
 # Toggle this variable to use Wireling on a different port (0-3)
 port = 0
-tinycircuits_wireling.Wireling.selectPort(port)
+wireling.selectPort(port)
 
 for device in range(128):
 	h = pi.i2c_open(1, device)
