@@ -4,8 +4,8 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="example-pkg-TinyCircuits", 
-    version="0.0.1",
+    name="tinycircuits-wireling", 
+    version="0.0.2",
     author="TinyCircuits",
     author_email="info@tinycircuits.com",
     description="Wireling Python library",
