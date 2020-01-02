@@ -59,6 +59,14 @@ class Wireling:
         elif pin == 3: return 21
         else: raise ValueError('Pin %s is not valid, please select pin 0-3' % (pin))
 
+    # Get the correct board pin number that correlates to the port number
+    def getBoardPin(self, pin):
+        if pin == 0: return board.D10
+        elif pin == 1: return board.D12
+        elif pin == 2: return board.D18
+        elif pin == 3: return board.D21
+        else: raise ValueError('Pin %s is not valid, please select pin 0-3' % (pin))
+
     def analogRead(self, port):
         # Create the ADC object using the I2C bus
         ads = ADS.ADS1115(i2c)
